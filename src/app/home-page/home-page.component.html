@@ -1,0 +1,28 @@
+<div class="container" style="display: flex; align-items: center; justify-content: center; margin-top: 15%;">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div>
+            <span>HOME PAGE</span>
+            <div class="col-md-8">
+                <div *ngIf="userPro">
+                    <div>
+                        <span> WELCOME: {{userPro.displayName}}</span>
+                        <br>
+                        <br>
+                        <span>WITH EMAIL-ADDRESS: {{userPro.email}}</span>
+                    </div>
+                    <div>
+                        <a (click)="logOut()">SignOut</a>
+                    </div>
+                    
+                </div>
+                <div *ngIf="!userPro">
+                    <p>You are not logged in yet. Signup to see your profile</p>
+                    <a routerLink="/signup">SIGNUP</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+</div>

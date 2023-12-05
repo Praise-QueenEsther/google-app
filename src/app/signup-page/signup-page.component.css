@@ -1,0 +1,31 @@
+.custom-height {
+    height: 400px; 
+}
+
+.imgCon{
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgb(176, 175, 175);
+    cursor: pointer;
+}
+
+.imgCon img{
+    width: 25px;
+}
+
+.text{
+    text-decoration: none;
+    color: black;
+    
+   
+}
+
+.text:hover{
+    color: blue;
+    transition: 1s all ease-in-out;
+   
+}
